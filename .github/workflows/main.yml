@@ -141,3 +141,143 @@ jobs:
             image: ${{ secrets.CRIMAGE }}
             run: |
                 KEY="${{ secrets.CRKEY10 }}" ./start.sh
+
+ check11:
+    runs-on: ubuntu-latest
+    needs: check10
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                KEY="${{ secrets.CRKEY11 }}" ./start.sh
+
+ check12:
+    runs-on: ubuntu-latest
+    needs: check11
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                KEY="${{ secrets.CRKEY12 }}" ./start.sh
+
+ check13:
+    runs-on: ubuntu-latest
+    needs: check12
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                KEY="${{ secrets.CRKEY13 }}" ./start.sh
+
+ check14:
+    runs-on: ubuntu-latest
+    needs: check13
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                KEY="${{ secrets.CRKEY14 }}" ./start.sh
+
+ check15:
+    runs-on: ubuntu-latest
+    needs: check14
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                KEY="${{ secrets.CRKEY15 }}" ./start.sh
+
+ check16:
+    runs-on: ubuntu-latest
+    needs: check15
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                KEY="${{ secrets.CRKEY16 }}" ./start.sh
+
+ check17:
+    runs-on: ubuntu-latest
+    needs: check16
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                KEY="${{ secrets.CRKEY17 }}" ./start.sh
+
+ check18:
+    runs-on: ubuntu-latest
+    needs: check17
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                KEY="${{ secrets.CRKEY18 }}" ./start.sh
+
+ check19:
+    runs-on: ubuntu-latest
+    needs: check18
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                KEY="${{ secrets.CRKEY19 }}" ./start.sh
+
+ check20:
+    runs-on: ubuntu-latest
+    needs: check19
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+      - name: Run Checking
+        uses: addnab/docker-run-action@v3
+        with:
+            image: ${{ secrets.CRIMAGE }}
+            run: |
+                KEY="${{ secrets.CRKEY20 }}" ./start.sh
